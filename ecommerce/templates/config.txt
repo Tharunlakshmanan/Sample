@@ -1,0 +1,32 @@
+after activating the env :
+
+    pip install six
+
+
+setting uuid for reset password:
+
+django -- admin :
+username--> admin
+mail -- >admin@gmail.com
+password -->admin123
+
+Part -2
+
+creating models:
+
+tables we have to maintain
+
+Products, orders,  orderupdate, contact
+
+install pillow for image
+
+after creating tables
+
+-----> python manage.py makemigrations
+-----> python manage.py migrate
+
+after this in admin file register our models
+
+displaying product in homepage category wise
+
+for implementation of add to cart functionality we need to add few javascript and jquery

@@ -1,0 +1,17 @@
+ {% autoescape off %}
+    Hi {{User.username}}
+    Please click this below to verify your account
+
+    http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}
+
+
+
+{% comment %} 
+{% autoescape off %}
+    Hi {{ User.username}},
+
+    Please click the link below to verify your account:
+
+    <a href="http://{{ domain }}{% url 'activate' uidb64=uid token=token %}">Verify Your Account</a>
+{% endautoescape %} {% endcomment %}
